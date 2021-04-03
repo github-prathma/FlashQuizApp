@@ -1,0 +1,93 @@
+.question-card {
+    content: "";
+    position: relative;
+    height: 100vh;
+    /* justify-content: space-around; */
+}
+
+.question-card::before {
+    content:"";
+    height: 100vh;
+    background-image: url(../Images/quiz.jpeg);
+    opacity: 0.1;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1; 
+}
+
+
+.question-card > .question {
+    top: 30%;
+    align-content: center;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.question-card > .question > .question-content > .vspace {
+    height: 30px;
+}
+
+.question-card > .question > .question-content > .options-table {
+    margin-left: 20px;
+    margin-right: 20px; 
+}
+
+.question-card > .question > .question-content > .question-text {
+    font-family: 'Montserrat',Arial,sans-serif;
+    font-size: 18px;
+}
+
+.question-card > .header  {
+    background: linear-gradient(170deg, rgb(249, 248, 253) 50%, rgb(230, 232, 253) 60%);
+    display: flex;
+    padding: 0px 15px;
+    justify-content: space-between;
+    font-family: 'Montserrat',Arial,sans-serif;
+
+}
+
+.spacer {
+    flex: 1;
+}
+
+.title {
+    font-family: 'Montserrat',Arial,sans-serif;
+    display: flex;
+}
+
+.title > h2 {
+    color: #621940;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.title > .questTimer {
+    font-weight: bold;
+    font-size: 16px;
+    display: block;
+    padding: 10px 10px 10px 10px;
+    align-self: center
+}
+
+
+.quizTimer {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    padding: 10px 10px 10px 10px;
+    align-self: center
+}
+
+.question-card > .question > .question-content > .options > .button > .MuiButton-fullWidth {
+    background-color: #f67e7d
+}
+
+.vspace {
+    height: 30px;
+}

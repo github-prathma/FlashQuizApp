@@ -1,0 +1,60 @@
+
+.welcome-page {
+    content: "";
+    position: relative;
+    height: 100vh;
+    justify-content: space-around;
+}
+
+.welcome-page::before {
+    content:"";
+    height: 100vh;
+    background-image: url(../Images/quiz.jpeg);
+    opacity: 0.3;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+    z-index: -1; 
+}
+
+.welcome-page > .content {
+    width: 100%;
+    height: 100%;
+    /* display: block; */
+    position: absolute;
+    /* justify-content: center; */
+    top: 20%;
+    align-content: center;
+}
+
+.welcome-page > .content > h1 {
+    font-weight: bold;
+}
+
+.welcome-page > .fill-form {
+    flex-direction: column;
+    display: block;
+}
+
+.welcome-page > .time-field > .MuiTextField-root {
+    width: 200px;
+    border-width: 3px;
+}
+
+.welcome-page .fill-form > .fields > .select-type {
+    width: 100px;
+    margin-left: 10px;
+    padding-left: 10px;
+}
+
+.welcome-page  .fill-form > .vspace {
+    height: 20px;
+}
+.welcome-page .fill-form  > .click-button >  .button > .MuiButton-fullWidth {
+    margin-top: 10px;
+}
